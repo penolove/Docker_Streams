@@ -1,4 +1,4 @@
-FROM penolove/centos7:InfoSphere
+FROM penolove/centos7:hadoop_master_hbase_pre
 
 COPY start.sh /root/start.sh
 
