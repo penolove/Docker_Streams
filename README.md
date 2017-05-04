@@ -13,7 +13,9 @@ but there are some InfoSphere setup steps need GUI.
 thus, it don't have Dockerfile.
 
 
+
 # For InfoSphere_master
+check pipework.sh configure is right(i.e. ip setting)
 
 ```
 ./run_info_master.sh
@@ -37,6 +39,9 @@ cd ~/Info_Shell
 
 # For InfoSphere_worker
 # build image
+check pipework.sh configure is right(i.e. ip setting)
+check run_info_worker.sh configure is right(i.e. host name setting)
+
 ```
 cd Docker_worker
 ./build.sh
