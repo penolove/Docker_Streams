@@ -15,7 +15,7 @@ thus, it don't have Dockerfile.
 
 
 # For InfoSphere_master
-check pipework.sh configure is right(i.e. ip setting)
+make sure zookeeper already start (zoo_keep)
 
 ```
 ./run_info_master.sh
@@ -24,7 +24,8 @@ check pipework.sh configure is right(i.e. ip setting)
 ./stop_info_core.sh
 ```
 
-inside docker
+inside docker, this can't be automatic
+since pam auth need to interact.
 ```
 su user
 cd ~/Info_Shell
