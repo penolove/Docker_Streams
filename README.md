@@ -36,6 +36,12 @@ cd ~/Info_Shell
 
 
 # For InfoSphere_worker
+# build image
+```
+cd Docker_worker
+./build.sh
+```
+
 ```
 ./run_info_worker.sh
 #stop
