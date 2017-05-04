@@ -1,4 +1,3 @@
-docker run -h master --name info_core \
-    -d penolove/centos7:hadoop_master_hbase
-#    -d penolove/centos7:hadoop_core_pre
+docker run -h invpm27 --name info_core \
+    -d penolove/centos7:hadoop_worker
 sudo ./pipework.sh
