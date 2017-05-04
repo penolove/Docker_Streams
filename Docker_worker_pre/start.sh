@@ -1,8 +1,4 @@
-cp /etc/hosts ~/hosts.news && sed -i "/invpm27/ s/.*//g" ~/hosts.news ;
-sed -i "/invpm28/ s/.*//g" ~/hosts.news ;
-sed -i "/invpm29/ s/.*//g" ~/hosts.news ;
-sed -i "/invpm31/ s/.*//g" ~/hosts.news ;
-sed -i "/master/ s/.*//g" ~/hosts.news ;
+cp /etc/hosts ~/hosts.news && sed -i "/invpm27/ s/.*//g" ~/hosts.news &&\
 echo '10.0.20.67 invpm27' >> ~/hosts.news;
 echo '10.0.20.68 invpm28' >> ~/hosts.news;
 echo '10.0.20.69 invpm29' >> ~/hosts.news;
@@ -20,6 +16,7 @@ echo 'invpm31'>> /usr/local/spark/conf/slaves
 
 # hadoop config
 echo 'invpm27'>>/usr/local/hadoop/etc/hadoop/slaves;
+
 
 su - user -c "ssh-keyscan -H invpm27 >> ~/.ssh/known_hosts"
 su - user -c "ssh-keyscan -H invpm28 >> ~/.ssh/known_hosts"

@@ -1,4 +1,4 @@
-FROM penolove/centos7:InfoSphere_worker
+FROM penolove/centos7:hadoop_core_pre
 
 COPY start.sh /root/start.sh
 COPY core-site.xml /usr/local/hadoop/etc/hadoop/core-site.xml
