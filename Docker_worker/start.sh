@@ -12,3 +12,5 @@ yes | cp  ~/hosts.news /etc/hosts ;
 
 #SPARK config
 sed -i "/export SPARK_MASTER_HOST=/ s/.*/export SPARK_MASTER_HOST=master/g" /usr/local/spark/conf/spark-env.sh;
+sed -i "/export SPARK_WORKER_CORES=/ s/.*/export SPARK_WORKER_CORES=8/g" /usr/local/spark/conf/spark-env.sh;
+sed -i "/export SPARK_WORKER_MEMORY=/ s/.*/export SPARK_WORKER_MEMORY=8000m/g" /usr/local/spark/conf/spark-env.sh;
