@@ -62,3 +62,11 @@ cd ~/Info_Shell;
 ```
 
 
+# For InfoSphere_IDE
+edit pipework.sh
+./run_info_IDE.sh
+
+for IDE : more usage plz see
+goo.gl/s6Et8Z
+page 18 ~ 33
+
