@@ -15,7 +15,10 @@ thus, it don't have Dockerfile.
 
 
 # For InfoSphere_master
-make sure zookeeper already start (zoo_keep)
+cd Docker_master;
+./build.sh
+
+before run docker, make sure zookeeper already start (zoo_keep)
 
 ```
 ./run_info_master.sh
